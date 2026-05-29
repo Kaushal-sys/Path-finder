@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  
+  /* Brand-specific tokens matching Pathfinder design specs */
+  --color-primary: #000666;               /* Dark Blue */
+  --color-primary-container: #1a237e;     /* Deep Indigo */
+  --color-on-primary-container: #8690ee;  /* Accent blue text */
+  --color-secondary: #006b5c;             /* Bridge Teal core */
+  --color-secondary-container: #68fadd;   /* Light Teal background */
+  --color-on-secondary-container: #007261;/* Dark Teal text */
+  --color-tertiary-container: #5c1800;    /* Dark warning orange container */
+  --color-on-tertiary-container: #e17c5a; /* Vivid alert orange text */
+  --color-background: #fbf8ff;            /* Off-white background canvas */
+  --color-on-background: #1b1b21;         /* Charcoal black */
+  --color-surface-container-lowest: #ffffff; /* Card backgrounds */
+  --color-surface-container-low: #f5f2fb;    /* Alternate secondary panel backdrops */
+  --color-surface-container: #efecf5;        /* Default scaffoldings */
+  --color-surface-container-high: #eae7ef;   /* Active selection background */
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom animated metrics helper rings */
+.gauge-ring {
+  transition: stroke-dashoffset 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glow-teal {
+  box-shadow: 0 0 20px rgba(104, 250, 221, 0.15);
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #c6c5d4;
+  border-radius: 99px;
+}
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: #767683;
+}

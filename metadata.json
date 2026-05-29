@@ -1,0 +1,6 @@
+{
+  "name": "Pathfinder",
+  "description": "An interactive career elevation platform that analyzes resumes, tracks skill gaps, generates custom learning roadmaps, and matches courses and jobs using Gemini.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
